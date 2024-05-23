@@ -1,0 +1,52 @@
+:root {
+    --verde-principal: #0fa968;
+    --verde-escuro-max: #03301f;
+    --verde-claro: #effef7;
+    --verde-escuro-medio: #11563a;
+}
+
+/* 
+=================================
+           backgrounds
+================================= 
+*/
+
+.bg-verde-principal{
+    background-color: var(--verde-principal);
+}
+
+.bg-verde-escuro-medio{
+    background-color: var(--verde-escuro-medio);
+}
+
+.bg-verde-escuro{
+    background-color: var(--verde-escuro-max);
+}
+
+.br-verde-claro{
+    background-color: var(--verde-claro);
+}
+
+
+/* 
+=================================
+              texto
+================================= 
+*/
+
+.text-verde-principal{
+color: var(--verde-principal);
+}
+
+.text-verde-escuro{
+    color: var(--verde-escuro-max);
+}
+
+.text-verde-claro{
+    color: var(--verde-claro);
+}
+
+.text-verde-escuro-medio{
+    color: var(--verde-escuro-medio);
+}
+
