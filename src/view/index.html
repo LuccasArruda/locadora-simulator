@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="utf-8">
@@ -7,8 +7,10 @@
     <title>Mallocadora - Início</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/css/geral.css">
+    <link rel="stylesheet" href="../assets/css/cores.css">
     <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="../assets/css/utilities.css">
+    <link rel="icon" href="../assets/img/icons/mallocadora.png">
 </head>
 
 <body class="bg-dark" onload="alteraGifBanner()">
@@ -54,6 +56,37 @@
             </div>
             <img src="../assets/gif/corrida.gif" alt="" id="gif-banner">
         </div>
+        <div class="container">
+            <section id="apresentacao">
+                <h1 class="text-center py-2">Alugue seus jogos sem sair de casa</h1>
+                <hr class="text-light">
+                <p class="text-verde-claro text-center">
+                    Pare de perder tempo com deslocamento até a locadora para encontrar a sua obra de arte favorita, aqui na <span class="text-verde-principal fw-bold">Mallocadora</span> nós poupamos seu tempo para que você consiga aproveitar mais o tempo curtindo seu jogo ou o seu filme favorito!  
+                </p>
+                <div class="d-flex justify-content-center" id="imagens-apresentacao">                    
+                    <div id="card-filmes" class="me-5 border border-2 rounded-3 border-success cursor-pointer  card-midias">
+                        <lord-icon  src="https://cdn.lordicon.com/mfwltlwe.json" 
+                                    trigger="loop" 
+                                    state="loop-cycle" 
+                                    colors="primary:#ffffff,secondary:#0fa968"
+                                    stroke="light"
+                                    style="width:200px;height:200px">
+                        </lord-icon>
+                        <p class="fs-2 text-center">Filmes</p>
+                    </div>
+                    <div id="card-jogos" class="me-5 border rounded-3 border-2 border-success cursor-pointer card-midias">
+                        <lord-icon  src="https://cdn.lordicon.com/bhslrvmg.json"
+                                    trigger="loop" 
+                                    colors="primary:#ffffff,secondary:#0fa968"
+                                    stroke="light"
+                                    style="width:200px;height:200px">
+                        </lord-icon>
+                        <p class="fs-2 text-center">Jogos</p>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
     </main>
     <footer>
 
@@ -62,6 +95,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="../js/index.js"></script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
 </body>
 
 </html>
