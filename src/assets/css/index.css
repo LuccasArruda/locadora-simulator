@@ -33,15 +33,51 @@ width: 35px;
     }
 }
 
-.card-midias{
+.card-opcoes{
     transition: 500ms;
 }
 
-.card-midias:hover{
+.card-opcoes:hover{
     background-color: var(--verde-escuro-medio);
     transition: 500ms;
 }
 
 #storysets-combos{
     width: 600px;
+}
+
+.card-midias{
+    transition: 500ms;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 10px;
+    & img{
+        border-radius: 5px;
+        object-fit: cover;
+    }
+
+    & .legenda-midia {
+        color: var(--verde-muito-claro);
+        width: 50%;
+        text-align: center;
+        transition: 100ms;
+        visibility: hidden;
+        display: inline-block;
+        position: absolute;
+        border-radius: 5px ;
+        bottom: 0;
+        margin: 5px;
+        padding: 0%;
+    }
+}
+
+.card-midias:hover{
+    transform: scale(1.05);
+
+    & .legenda-midia{
+        background-color: var(--verde-principal);
+        visibility: visible;
+    }
 }
