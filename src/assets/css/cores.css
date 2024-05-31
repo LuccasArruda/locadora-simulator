@@ -1,8 +1,11 @@
 :root {
     --verde-principal: #0fa968;
     --verde-escuro-max: #03301f;
-    --verde-claro: #effef7;
+    --verde-muito-claro: #effef7;
     --verde-escuro-medio: #11563a;
+    --verde-claro: #43e5a0;
+    --verde-principal-escuro: #108554;
+    --fundo-escuro: #0B0B0D;
 }
 
 /* 
@@ -23,10 +26,21 @@
     background-color: var(--verde-escuro-max);
 }
 
-.br-verde-claro{
+.bg-verde-muito-claro{
+    background-color: var(--verde-muito-claro);
+}
+
+.bg-verde-claro{
     background-color: var(--verde-claro);
 }
 
+.bg-verde-principal-escuro{
+    background-color: var(--verde-principal-escuro);
+}
+
+.bg-fundo-escuro{
+    background-color: var(--fundo-escuro);
+}
 
 /* 
 =================================
@@ -42,11 +56,23 @@ color: var(--verde-principal);
     color: var(--verde-escuro-max);
 }
 
-.text-verde-claro{
-    color: var(--verde-claro);
+.text-verde-muito-claro{
+    color: var(--verde-muito-claro);
 }
 
 .text-verde-escuro-medio{
     color: var(--verde-escuro-medio);
+}
+
+.text-verde-claro{
+    color: var(--verde-claro);
+}
+
+.text-verde-principal-escuro{
+    color: var(--verde-principal-escuro);
+}
+
+.text-fundo-escuro{
+    color: var(--fundo-escuro);
 }
 

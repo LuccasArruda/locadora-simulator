@@ -1,4 +1,4 @@
-@import 'geral.css';
+@import 'cores.css';
 
 #links-navbar a{
     color: var(--verde-claro);
@@ -25,4 +25,23 @@ width: 35px;
 
 #chamada-banner{
     height: 400px;
+}
+
+#imagens-apresentacao{
+    & img{
+        width: 200px;
+    }
+}
+
+.card-midias{
+    transition: 500ms;
+}
+
+.card-midias:hover{
+    background-color: var(--verde-escuro-medio);
+    transition: 500ms;
+}
+
+#storysets-combos{
+    width: 600px;
 }

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="utf-8">
@@ -7,11 +7,13 @@
     <title>Mallocadora - Início</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/css/geral.css">
+    <link rel="stylesheet" href="../assets/css/cores.css">
     <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="../assets/css/utilities.css">
+    <link rel="icon" href="../assets/img/icons/mallocadora.png">
 </head>
 
-<body class="bg-dark" onload="alteraGifBanner()">
+<body class="bg-fundo-escuro" onload="alteraGifBanner()">
     <header>
         <nav class="navbar navbar-expand-lg bg-verde-principal fixed-top">
             <div class="container-fluid">
@@ -19,8 +21,8 @@
                     <div>
                         <img src="../assets/img/icons/mallocadora.png" alt="logo da mallocadora" id="logo-navbar">
                     </div>
-                    <a class="fs-4 ps-3 navbar-brand text-verde-escuro-medio border border-2 border-start-0 border-top-0 border-bottom-0 pe-3" 
-                       href="#">Mallocadora</a>
+                    <a  class="fs-4 ps-3 navbar-brand text-verde-escuro-medio border border-2 border-start-0 border-top-0 border-bottom-0 pe-3" 
+                        href="#">Mallocadora</a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,10 +30,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav" id="links-navbar">
-                        <a class="nav-link" aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="#">Features</a>
-                        <a class="nav-link" href="#">Pricing</a>
-                        <a class="nav-link" aria-disabled="true">Disabled</a>
+                        <a class="nav-link" aria-current="page" href="#">Início</a>
+                        <a class="nav-link" href="#">Jogos</a>
+                        <a class="nav-link" href="#">Filmes</a>
                     </div>
                 </div>
             </div>
@@ -54,6 +55,49 @@
             </div>
             <img src="../assets/gif/corrida.gif" alt="" id="gif-banner">
         </div>
+        <div>
+            <section id="apresentacao" class="container">
+                <h1 class="text-center py-2">Alugue seus jogos sem sair de casa</h1>
+                <hr class="text-verde-principal border-2 rounded">
+                <p class="text-verde-muito-claro text-center fs-5 fw-lighter">
+                    Pare de perder tempo com deslocamento até a locadora para encontrar a sua obra de arte favorita, aqui na <span class="text-verde-principal fw-bold">Mallocadora</span> nós poupamos seu tempo para que você consiga aproveitar mais o tempo curtindo seu jogo ou o seu filme favorito!  
+                </p>
+                <div class="d-flex justify-content-center" id="imagens-apresentacao">                    
+                    <div id="card-filmes" class="me-5 border border-2 rounded-3 border-success cursor-pointer  card-midias">
+                        <lord-icon  src="https://cdn.lordicon.com/mfwltlwe.json" 
+                                    trigger="loop" 
+                                    state="loop-cycle" 
+                                    colors="primary:#ffffff,secondary:#0fa968"
+                                    stroke="light"
+                                    style="width:200px;height:200px">
+                        </lord-icon>
+                        <p class="fs-2 text-center">Filmes</p>
+                    </div>
+                    <div id="card-jogos" class="me-5 border rounded-3 border-2 border-success cursor-pointer card-midias">
+                        <lord-icon  src="https://cdn.lordicon.com/bhslrvmg.json"
+                                    trigger="loop" 
+                                    colors="primary:#ffffff,secondary:#0fa968"
+                                    stroke="light"
+                                    style="width:200px;height:200px">
+                        </lord-icon>
+                        <p class="fs-2 text-center">Jogos</p>
+                    </div>
+                </div>
+            </section>
+            <section id="combos" class="my-5 py-2 bg-dark">
+                <div class="container">
+                    <h1 class="text-center text-verde-principal">Combos</h1>
+                    <hr class="text-verde-principal border-2 rounded">
+                    <p class="text-light text-center fs-5 fw-lighter">
+                        Aqui na Mallocadora você também pode alugar <span class="text-verde-principal fw-bold">combos</span>, levando para casa jogos e filmes para ter a experiência completa da obra!
+                    </p>
+                    <div id="storysets-combos" class="d-flex">
+                        <img src="../assets/img/Movie Night-amico.svg" alt="desenho com duas pessoas assistindo um filme">
+                        <img src="../assets/img/Select player-amico.svg" alt="desenho com um">
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
 
@@ -62,6 +106,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="../js/index.js"></script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
 </body>
 
 </html>
