@@ -22,7 +22,7 @@
     </style>
 </head>
 
-<body class="bg-fundo-escuro">
+<body class="bg-fundo-escuro" onload="escondeItensCarrinho()">
     <header>
         <nav class="navbar navbar-expand-lg bg-verde-principal fixed-top">
             <div class="container-fluid">
@@ -41,10 +41,16 @@
                         <a class="nav-link" href="jogos.html">Jogos</a>
                         <a class="nav-link" href="filmes.html">Filmes</a>
                         <a class="nav-link" href="combos.html">Combos</a>
+                        <a class="nav-link active" href="desenvolvedores.html">Desenvolvedores</a>
                     </div>
                 </div>
             </div>
         </nav>
+        <button class="bg-verde-principal-escuro" id="carrinho" onclick="comutarItensCarrinho()">
+            <lord-icon src="https://cdn.lordicon.com/odavpkmb.json" trigger="hover"
+                colors="primary:#effef7,secondary:#0fa968">
+            </lord-icon>
+        </button>
     </header>
 
     <main class="text-verde-principal mt-5 pt-5">
@@ -61,7 +67,7 @@
                             <p class="card-text">Borderlands 2 é a sequência do aclamado 
                                 título da Gearbox lançado em 2009. Desta vez, os jogadores poderão desbravar o mundo de Pandora com muito mais respostas, 
                                 pois os acontecimentos das missões e do próprio enredo estão diretamente ligados àquele universo, criando um contexto muito maior e mais coeso.</p>
-                            <a href="#" class="btn btn-verde-principal">Alugar</a>
+                            <a class="btn btn-verde-principal" onclick="adicionarItemCarrinho('Borderlands 2', 20)">Alugar</a>
                         </div>
                     </div>
                 </div>
@@ -74,7 +80,7 @@
                             <p class="card-text">Contando com o poder e fidelidade de última 
                                 geração da tecnologia Frostbite™ 3, Battlefield™ 4 apresenta uma experiência visceral e dramática como nunca vista antes. Somente no Battlefield você pode demolir os edifícios que protegem seu inimigo.
                                 Somente em Battlefield você pode liderar um ataque em uma canhoneira.</p>
-                            <a href="#" class="btn btn-verde-principal">Alugar</a>
+                            <a class="btn btn-verde-principal" onclick="adicionarItemCarrinho('Battlefield 4', 25)">Alugar</a>
                         </div>
                     </div>
                 </div>
@@ -87,7 +93,7 @@
                             <p class="card-text">Cyberpunk 2077 é um jogo de ação e aventura em mundo aberto do estúdio CD Projekt Red, criador de The Witcher 3: Wild Hunt. 
                                 O jogo acontece em Night City, uma megalópole obcecada pelo poder, glamour e modificações biológicas.
                                 Você controla V, um mercenário fora da lei em busca de um implante sem igual, que carrega o segredo da imortalidade.</p>
-                            <a href="#" class="btn btn-verde-principal">Alugar</a>
+                            <a class="btn btn-verde-principal" onclick="adicionarItemCarrinho('Cyberpunk 2077', 30)">Alugar</a>
                         </div>
                     </div>
                 </div>
@@ -100,7 +106,7 @@
                             <p class="card-text">O jogo se passa no estado ficcional de San Andreas, com a história da campanha um jogador 
                                 seguindo três criminosos e seus esforços para realizarem assaltos sob a pressão de uma agência governamental. 
                                 O mundo aberto permite que os jogadores naveguem livremente pelas áreas rurais e urbanas de San Andreas.</p>
-                            <a href="#" class="btn btn-verde-principal">Alugar</a>
+                            <a class="btn btn-verde-principal" onclick="adicionarItemCarrinho('GTA V', 25)">Alugar</a>
                         </div>
                     </div>
                 </div>
@@ -112,7 +118,7 @@
                             <h5 class="card-title">Lords of Fallen</h5>
                             <p class="card-text">Um RPG de ação épico e sombrio ambientado em um vasto mundo de trevas e caos. 
                                 Derrote um deus demoníaco ressuscitado nesta novíssima aventura ambientada em um mundo interconectado cinco vezes maior do que no jogo original.</p>
-                            <a href="#" class="btn btn-verde-principal">Alugar</a>
+                            <a class="btn btn-verde-principal" onclick="adicionarItemCarrinho('Lords of the Fallen', 25)">Alugar</a>
                         </div>
                     </div>
                 </div>
@@ -125,7 +131,7 @@
                             <p class="card-text">Crie qualquer personagem que quiser e explorar com liberdade inigualável ao 
                                 embarcar em uma jornada épica para responder ao maior mistério da humanidade. 
                                 No ano de 2330, a humanidade se aventurou além do nosso sistema solar, colonizando novos planetas e vivendo como exploradores do espaço.</p>
-                            <a href="#" class="btn btn-verde-principal">Alugar</a>
+                            <a class="btn btn-verde-principal" onclick="adicionarItemCarrinho('Starfield', 35)">Alugar</a>
                         </div>
                     </div>
                 </div>
@@ -137,7 +143,7 @@
                             <h5 class="card-title">Terraria</h5>
                             <p class="card-text">Terraria é um jogo eletrônico RPG de ação-aventura independente produzido pela desenvolvedora de jogos Re-Logic. 
                                 Possui como características a exploração, artesanato, construção de estruturas e combate a monstros perigosos em um mundo 2D gerado de forma procedural.</p>
-                            <a href="#" class="btn btn-verde-principal">Alugar</a>
+                            <a class="btn btn-verde-principal" onclick="adicionarItemCarrinho('Terraria', 15)">Alugar</a>
                         </div>
                     </div>
                 </div>
@@ -150,7 +156,7 @@
                             <p class="card-text">Dragon Ball Z: Kakarot é um RPG de ação em terceira pessoa da produtora da série Naruto: Ultimate Ninja Storm. Jogue como o 
                                 lendário herói Son Goku (ou "Kakaroto", seu nome verdadeiro) em uma enorme aventura de exploração livre que coloca você frente a frente a 
                                 alguns dos vilões mais implacáveis da série.</p>
-                            <a href="#" class="btn btn-verde-principal">Alugar</a>
+                            <a class="btn btn-verde-principal" onclick="adicionarItemCarrinho('Dragon Ball Z: Kakarot', 35)">Alugar</a>
                         </div>
                     </div>
                 </div>
@@ -163,7 +169,7 @@
                             <p class="card-text">Este jogo bastante aguardado apresenta um novo herói, 
                                 Ezio Auditore da Firenze, um jovem nobre italiano, e uma nova era, o Renascimento. 
                                 Ezio faz amizade com Leonardo da Vinci, enfrenta as famílias mais poderosas de Florença e se aventura pelos canais de Veneza, onde aprende a ser um mestre assassino.</p>
-                            <a href="#" class="btn btn-verde-principal">Alugar</a>
+                            <a class="btn btn-verde-principal" onclick="adicionarItemCarrinho('Assassin\'s Creed II', 19)">Alugar</a>
                         </div>
                     </div>
                 </div>
@@ -176,7 +182,7 @@
                             <p class="card-text">A série Far Cry tem a temática de inserir o jogador na natureza selvagem, 
                                 um cenário exuberante onde, usando todos os recursos ao seu dispor, 
                                 o jogador deve lutar contra um ou mais tiranos para controlar a região, além de ter que sobreviver a animais selvagens que vagam pelos espaços mais abertos do mapa.</p>
-                            <a href="#" class="btn btn-verde-principal">Alugar</a>
+                            <a class="btn btn-verde-principal" onclick="adicionarItemCarrinho('Far Cry 6', 25)">Alugar</a>
                         </div>
                     </div>
                 </div>
@@ -189,7 +195,7 @@
                             <p class="card-text">Com a vingança contra os deuses do Olimpo no passado, Kratos agora vive no reino das divindades e monstros nórdicos. 
                                 É nesse mundo duro e impiedoso que ele deve lutar para sobreviver enquanto ensina seu filho a fazer o mesmo e tenta 
                                 impedi-lo de repetir os erros cruéis do Fantasma de Esparta.</p>
-                            <a href="#" class="btn btn-verde-principal">Alugar</a>
+                            <a class="btn btn-verde-principal" onclick="adicionarItemCarrinho('God of War', 30)">Alugar</a>
                         </div>
                     </div>
                 </div>
@@ -202,7 +208,34 @@
                             <p class="card-text">Bandai Namco Entertainment America Inc. Mergulhe em Little Nightmares, 
                                 um fantástico conto sombrio que o fará enfrentar seus medos de infância! 
                                 Ajude Six a fugir de A Bocarra – um navio imenso e misterioso habitado por almas corrompidas que procuram sua próxima refeição.</p>
-                            <a href="#" class="btn btn-verde-principal">Alugar</a>
+                            <a class="btn btn-verde-principal" onclick="adicionarItemCarrinho('Little Nightmares', 10)">Alugar</a>
                         </div>
                     </div>
                 </div>
+    </main>
+                <aside class="bg-dark position-fixed d-inline-block" id="itens-carrinho">
+                    <button class="d-inline-block position-absolute"                        
+                            id="fechar-itens-carrinho"
+                            onclick="comutarItensCarrinho()">
+                        <img src="../assets/img/icons/fechar.svg" alt="">
+                    </button>
+                    <h2 class="text-verde-claro text-center">Itens Alugados</h2>
+                    <hr>
+                    <ol id="lista-itens-alugados" class="overflow-y-scroll h-50">
+                    </ol>
+                    <hr>
+                    <div id="totais">
+                        <p class="fs-2">Total: R$ <span class="text-verde-claro fw-bold" id="total-itens-alugados">0</span></p>
+                </div>
+                </aside>
+                <footer>
+
+                </footer>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                    crossorigin="anonymous"></script>
+                <script src="../js/index.js"></script>
+                <script src="https://cdn.lordicon.com/lordicon.js"></script>
+</body>
+        
+</html>
