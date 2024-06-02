@@ -1,20 +1,21 @@
 const carrinho = [];
 
-function escondeItensCarrinho() {
-    const itensCarrinho = document.getElementById('itens-carrinho');
-    itensCarrinho.style.display = 'none';
+
+function escondeItensCarrinho(){
+    let divItensCarrinho = document.getElementById('itens-carrinho')
+    divItensCarrinho.style.visibility = 'hidden'
 }
 
-function comutarItensCarrinho() {
-    const itensCarrinho = document.getElementById('itens-carrinho');
-    if (itensCarrinho.style.display === 'none' || itensCarrinho.style.display === '') {
-        itensCarrinho.style.display = 'block';
-        mostrarItensCarrinho();
-    } else {
-        itensCarrinho.style.display = 'none';
+function comutarItensCarrinho(){
+    let divItensCarrinho = document.getElementById('itens-carrinho')
+    let itensCarrinhoVisiveis = (divItensCarrinho.style.visibility == 'visible')
+    
+    if (itensCarrinhoVisiveis){
+        divItensCarrinho.style.visibility = 'hidden'
+        return
     }
+    divItensCarrinho.style.visibility = 'visible'
 }
-
 function adicionarItemCarrinho(nome, preco) {
     carrinho.push({ nome, preco });
     mostrarItensCarrinho();
