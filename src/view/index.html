@@ -21,7 +21,7 @@
                     <div>
                         <img src="../assets/img/icons/mallocadora.png" alt="logo da mallocadora" id="logo-navbar">
                     </div>
-                    <a  class="fs-4 ps-3 navbar-brand text-verde-escuro-medio border border-2 border-start-0 border-top-0 border-bottom-0 pe-3" 
+                    <a class="fs-4 ps-3 navbar-brand text-verde-escuro-medio border border-2 border-start-0 border-top-0 border-bottom-0 pe-3"
                         href="#">Mallocadora</a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -39,7 +39,8 @@
             </div>
         </nav>
         <button class="bg-verde-principal-escuro" id="carrinho" onclick="comutarItensCarrinho()">
-            <lord-icon src="https://cdn.lordicon.com/odavpkmb.json" trigger="hover" colors="primary:#effef7,secondary:#0fa968">
+            <lord-icon src="https://cdn.lordicon.com/odavpkmb.json" trigger="hover"
+                colors="primary:#effef7,secondary:#0fa968">
             </lord-icon>
         </button>
     </header>
@@ -110,7 +111,7 @@
                 <div class="d-flex flex-row overflow-x-scroll">
                     <div class="d-flex justify-content-center position-relative" id="imagens-apresentacao">
                         <div id="card-filmes" class="card-midias">
-                            <div class="legenda-midia" onclick="adicionarItemCarrinho()" title="Missão Impossível: Efeito Fallout">
+                            <div class="legenda-midia" onclick="adicionarItemCarrinho('Missão Impossível: Efeito Fallout', 20)" title="Missão Impossível: Efeito Fallout">
                                 Alugar
                             </div>
                             <img src="../assets/img/missao-impossivel-banner.jpg" alt="">
@@ -118,7 +119,7 @@
                     </div>
                     <div class="d-flex justify-content-center position-relative" id="imagens-apresentacao">
                         <div id="card-filmes" class="card-midias">
-                            <div class="legenda-midia">
+                            <div class="legenda-midia" onclick="adicionarItemCarrinho('Velozes e Furiosos X', 18)">
                                 Alugar
                             </div>
                             <img src="../assets/img/velozes-e-furiosos-x.jpg" alt="">
@@ -126,7 +127,7 @@
                     </div>
                     <div class="d-flex justify-content-center position-relative" id="imagens-apresentacao">
                         <div id="card-filmes" class="card-midias">
-                            <div class="legenda-midia">
+                            <div class="legenda-midia" onclick="adicionarItemCarrinho('Harry Potter', 15)">
                                 Alugar
                             </div>
                             <img src="../assets/img/harry-potter.jpg" alt="">
@@ -134,7 +135,7 @@
                     </div>
                     <div class="d-flex justify-content-center position-relative" id="imagens-apresentacao">
                         <div id="card-filmes" class="card-midias">
-                            <div class="legenda-midia">
+                            <div class="legenda-midia" onclick="adicionarItemCarrinho('O Senhor dos Anéis', 22)">
                                 Alugar
                             </div>
                             <img src="../assets/img/o-senhor-dos-aneis.jpg" alt="">
@@ -142,7 +143,7 @@
                     </div>
                     <div class="d-flex justify-content-center position-relative" id="imagens-apresentacao">
                         <div id="card-filmes" class="card-midias">
-                            <div class="legenda-midia">
+                            <div class="legenda-midia" onclick="adicionarItemCarrinho('Kingsman', 19)">
                                 Alugar
                             </div>
                             <img src="../assets/img/kingsman.jpg" alt="">
@@ -150,7 +151,7 @@
                     </div>
                     <div class="d-flex justify-content-center position-relative" id="imagens-apresentacao">
                         <div id="card-filmes" class="card-midias">
-                            <div class="legenda-midia">
+                            <div class="legenda-midia" onclick="adicionarItemCarrinho('The Batman', 20)">
                                 Alugar
                             </div>
                             <img src="../assets/img/the-batman.jpg" alt="">
@@ -158,7 +159,7 @@
                     </div>
                     <div class="d-flex justify-content-center position-relative" id="imagens-apresentacao">
                         <div id="card-filmes" class="card-midias">
-                            <div class="legenda-midia">
+                            <div class="legenda-midia" onclick="adicionarItemCarrinho('O Poderoso Chefão', 25)">
                                 Alugar
                             </div>
                             <img src="../assets/img/o-poderoso-chefao.jpg" alt="">
@@ -172,7 +173,7 @@
                 <div class="d-flex flex-row overflow-x-scroll">
                     <div class="d-flex justify-content-center position-relative" id="imagens-apresentacao">
                         <div id="card-filmes" class="card-midias">
-                            <div class="legenda-midia">
+                            <div class="legenda-midia" onclick="adicionarItemCarrinho('Battlefield 4', 25)">
                                 Alugar
                             </div>
                             <img src="../assets/img/jogos/battlefield-4.jpg" alt="">
@@ -180,7 +181,7 @@
                     </div>
                     <div class="d-flex justify-content-center position-relative" id="imagens-apresentacao">
                         <div id="card-filmes" class="card-midias">
-                            <div class="legenda-midia">
+                            <div class="legenda-midia" onclick="adicionarItemCarrinho('Borderlands 2', 20)">
                                 Alugar
                             </div>
                             <img src="../assets/img/jogos/borderlands-2.jpg" alt="">
@@ -188,7 +189,7 @@
                     </div>
                     <div class="d-flex justify-content-center position-relative" id="imagens-apresentacao">
                         <div id="card-filmes" class="card-midias">
-                            <div class="legenda-midia">
+                            <div class="legenda-midia" onclick="adicionarItemCarrinho('Cyberpunk 2077', 30)">
                                 Alugar
                             </div>
                             <img src="../assets/img/jogos/cyberpunk-2077.jpg" alt="">
@@ -196,7 +197,7 @@
                     </div>
                     <div class="d-flex justify-content-center position-relative" id="imagens-apresentacao">
                         <div id="card-filmes" class="card-midias">
-                            <div class="legenda-midia">
+                            <div class="legenda-midia" onclick="adicionarItemCarrinho('GTA V', 25)">
                                 Alugar
                             </div>
                             <img src="../assets/img/jogos/gta-v.jpg" alt="">
@@ -204,7 +205,7 @@
                     </div>
                     <div class="d-flex justify-content-center position-relative" id="imagens-apresentacao">
                         <div id="card-filmes" class="card-midias">
-                            <div class="legenda-midia">
+                            <div class="legenda-midia" onclick="adicionarItemCarrinho('Starfield', 35)">
                                 Alugar
                             </div>
                             <img src="../assets/img/jogos/starfield.jpg" alt="">
@@ -212,7 +213,7 @@
                     </div>
                     <div class="d-flex justify-content-center position-relative" id="imagens-apresentacao">
                         <div id="card-filmes" class="card-midias">
-                            <div class="legenda-midia">
+                            <div class="legenda-midia" onclick="adicionarItemCarrinho('Terraria', 15)">
                                 Alugar
                             </div>
                             <img src="../assets/img/jogos/teraria.jpg" alt="">
@@ -220,7 +221,7 @@
                     </div>
                     <div class="d-flex justify-content-center position-relative" id="imagens-apresentacao">
                         <div id="card-filmes" class="card-midias">
-                            <div class="legenda-midia">
+                            <div class="legenda-midia" onclick="adicionarItemCarrinho('Lords of the Fallen', 25)">
                                 Alugar
                             </div>
                             <img src="../assets/img/jogos/lords-of-fallen.jpg" alt="">

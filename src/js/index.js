@@ -1,59 +1,41 @@
+const carrinho = [];
 
-function escondeItensCarrinho(){
-    let divItensCarrinho = document.getElementById('itens-carrinho')
-    divItensCarrinho.style.visibility = 'hidden'
+function escondeItensCarrinho() {
+    const itensCarrinho = document.getElementById('itens-carrinho');
+    itensCarrinho.style.display = 'none';
 }
 
-function comutarItensCarrinho(){
-    let divItensCarrinho = document.getElementById('itens-carrinho')
-    let itensCarrinhoVisiveis = (divItensCarrinho.style.visibility == 'visible')
-    
-    if (itensCarrinhoVisiveis){
-        divItensCarrinho.style.visibility = 'hidden'
-        return
+function comutarItensCarrinho() {
+    const itensCarrinho = document.getElementById('itens-carrinho');
+    if (itensCarrinho.style.display === 'none' || itensCarrinho.style.display === '') {
+        itensCarrinho.style.display = 'block';
+        mostrarItensCarrinho();
+    } else {
+        itensCarrinho.style.display = 'none';
     }
-    divItensCarrinho.style.visibility = 'visible'
 }
 
-function adicionarItemCarrinho(){
-    let divItensCarrinho = document.getElementById('lista-itens-alugados')
-    let itemAlugado = retornaTagItemAlugado()
-    let precoItemAlugado = retornaTagPrecoItem()
-
-    somaPrecoAlugado(30)
-    itemAlugado.appendChild(precoItemAlugado)
-    divItensCarrinho.appendChild(itemAlugado)
+function adicionarItemCarrinho(nome, preco) {
+    carrinho.push({ nome, preco });
+    mostrarItensCarrinho();
 }
 
-function retornaTagItemAlugado(){
-    let itemAlugado = document.createElement('li')
-    itemAlugado.innerHTML = 'The Batman'
-    itemAlugado.style.fontSize = '20px'
-    itemAlugado.style.color = '#effef7'
-    return itemAlugado
+function mostrarItensCarrinho() {
+    const listaItens = document.getElementById('lista-itens-alugados');
+    const totalItens = document.getElementById('total-itens-alugados');
+    listaItens.innerHTML = '';
+
+    let total = 0;
+    carrinho.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = `${item.nome} - R$ ${item.preco}`;
+        listaItens.appendChild(li);
+        total += item.preco;
+    });
+
+    totalItens.textContent = total;
 }
 
-function retornaTagPrecoItem(){
-    let precoItemAlugado = document.createElement('span')
-    precoItemAlugado.innerHTML = ' R$ 30,00'
-    precoItemAlugado.style.fontSize = '20px'
-    precoItemAlugado.style.color = '#0fa968'
-    return precoItemAlugado
-}
-
-function somaPrecoAlugado(precoItem){
-    let tagPrecoAlugados = document.getElementById('total-itens-alugados')
-    let precoAlugados = parseFloat(tagPrecoAlugados.textContent)
-    let tagDivTotais = document.getElementById('totais')
-    
-    precoAlugados += precoItem
-    console.log(precoAlugados)
-    tagPrecoAlugados.innerHTML = precoAlugados
-
-    if (precoAlugados > 0){
-        tagDivTotais.visibility = 'visible'
-        return
-    }
-
-    tagDivTotais.visibility = 'hidden'
-}
+document.addEventListener('DOMContentLoaded', () => {
+    escondeItensCarrinho();
+});
