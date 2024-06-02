@@ -33,3 +33,6 @@
     background-color: var(--verde-principal);
 }
 
+::selection{
+    background-color: var(--verde-escuro-medio);
+}
