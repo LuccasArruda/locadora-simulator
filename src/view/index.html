@@ -13,7 +13,7 @@
     <link rel="icon" href="../assets/img/icons/mallocadora.png">
 </head>
 
-<body class="bg-fundo-escuro" onload="alteraGifBanner()">
+<body class="bg-fundo-escuro" onload="escondeItensCarrinho()">
     <header>
         <nav class="navbar navbar-expand-lg bg-verde-principal fixed-top d-flex">
             <div class="container-fluid">
@@ -38,10 +38,10 @@
                 </div>
             </div>
         </nav>
-        <div class="bg-verde-principal-escuro" id="carrinho">
+        <button class="bg-verde-principal-escuro" id="carrinho" onclick="comutarItensCarrinho()">
             <lord-icon src="https://cdn.lordicon.com/odavpkmb.json" trigger="hover" colors="primary:#effef7,secondary:#0fa968">
             </lord-icon>
-        </div>
+        </button>
     </header>
     <main class="text-verde-principal">
         <div id="banner-imagem-home" disabled>
@@ -230,6 +230,15 @@
             </section>
         </div>
     </main>
+    <aside class="bg-dark position-fixed d-inline-block" id="itens-carrinho">
+        <button class="d-inline-block position-absolute"                        
+                id="fechar-itens-carrinho"
+                onclick="comutarItensCarrinho()">
+            <img src="../assets/img/icons/fechar.svg" alt="">
+        </button>
+        <h2 class="text-verde-claro text-center">Itens Alugados</h2>
+        <hr>
+    </aside>
     <footer>
 
     </footer>

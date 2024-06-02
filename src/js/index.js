@@ -1,5 +1,16 @@
 
-function alteraGifBanner(){
-    // let gifBanner = document.getElementById('gif-banner')
-    // gifBanner.src = 'https://i.gifer.com/3QCy.gif'
+function escondeItensCarrinho(){
+    let divItensCarrinho = document.getElementById('itens-carrinho')
+    divItensCarrinho.style.visibility = 'hidden'
+}
+
+function comutarItensCarrinho(){
+    let divItensCarrinho = document.getElementById('itens-carrinho')
+    let itensCarrinhoVisiveis = (divItensCarrinho.style.visibility == 'visible')
+    
+    if (itensCarrinhoVisiveis){
+        divItensCarrinho.style.visibility = 'hidden'
+        return
+    }
+    divItensCarrinho.style.visibility = 'visible'
 }

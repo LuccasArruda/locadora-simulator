@@ -119,6 +119,8 @@ width: 35px;
     cursor: pointer;
     transition: 250ms;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.434);
+    outline: none;
+    border: none;
 
     & lord-icon{
         width: 100%;
@@ -129,4 +131,23 @@ width: 35px;
 #carrinho:hover{
     background-color: var(--verde-escuro-medio);
     transform: scale(1.05);
+}
+
+#itens-carrinho{
+    color: var(--verde-muito-claro);
+    right: 0%;
+    top: 0%;
+    width: 15%;
+    height: 100%;
+    z-index: 6;
+    padding: 5% 10px;
+
+    & #fechar-itens-carrinho{
+        background-color: transparent;
+        outline: none;
+        border: none;
+        top: 7%;
+        right: 2%;
+        cursor: pointer;
+    }
 }
