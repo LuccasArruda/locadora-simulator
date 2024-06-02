@@ -32,3 +32,7 @@
 ::-webkit-scrollbar-thumb{
     background-color: var(--verde-principal);
 }
+
+::selection{
+    background-color: var(--verde-escuro-medio);
+}
