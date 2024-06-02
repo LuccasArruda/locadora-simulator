@@ -1,0 +1,34 @@
+@import url(cores.css);
+
+body {
+    padding-top: 70px;
+}
+
+.card-img-top {
+    object-fit: cover;
+}
+
+.links-github{
+    width: 7%;
+    transition: 250ms;
+    & img{
+        display: inline-block;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.links-github:hover{
+    transform: scale(1.05);
+}
+
+.card-dev{
+    border: solid 2px red;
+    transition: 250ms;
+}
+
+.card-dev:hover{
+    border: solid 1px var(--verde-principal);
+    transform: scale(1.05);
+}
