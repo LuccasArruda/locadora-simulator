@@ -150,4 +150,16 @@ width: 35px;
         right: 2%;
         cursor: pointer;
     }
+
+    & ol{
+        color: var(--verde-muito-claro);
+        font-size: 20px;
+        & p{
+            color: var(--verde-principal);
+            display: inline-block;
+            position: absolute;
+            right: 3%;
+            font-size: 20px;
+        }
+    }
 }

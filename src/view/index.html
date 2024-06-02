@@ -110,7 +110,7 @@
                 <div class="d-flex flex-row overflow-x-scroll">
                     <div class="d-flex justify-content-center position-relative" id="imagens-apresentacao">
                         <div id="card-filmes" class="card-midias">
-                            <div class="legenda-midia">
+                            <div class="legenda-midia" onclick="adicionarItemCarrinho()" title="Missão Impossível: Efeito Fallout">
                                 Alugar
                             </div>
                             <img src="../assets/img/missao-impossivel-banner.jpg" alt="">
@@ -238,6 +238,12 @@
         </button>
         <h2 class="text-verde-claro text-center">Itens Alugados</h2>
         <hr>
+        <ol id="lista-itens-alugados" class="overflow-y-scroll h-50">
+        </ol>
+        <hr>
+        <div id="totais">
+            <p class="fs-2">Total: R$ <span class="text-verde-claro fw-bold" id="total-itens-alugados">0</span></p>
+        </div>
     </aside>
     <footer>
 
